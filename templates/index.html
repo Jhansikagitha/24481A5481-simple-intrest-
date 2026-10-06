@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Simple Intrest calculator</title>
+</head>
+<body>
+    <center>
+        <h1 style="color:blue;font-family: Arial, Helvetica, sans-serif ;">Simple Intrest calculator</h1>
+
+        <form method="post">
+            <input type="number" step="any" name="p" id="" placeholder="Principal Amount">
+            <input type="number" step="any" name="t" id="" placeholder="Time">
+            <input type="number" step="any" name="r" id="" placeholder="Rate">
+            <button type="submit"> Calculate Intrest</button>
+        </form>
+    </center>
+
+    {# Display output #}
+    {% if result %}
+        <hr>
+        <h3>Result,</h3>
+        <span>Principal: {{ p }}</span>
+        <span>Rate: {{ r }}</span>
+        <span>Time: {{ t }}</span>
+        <span>
+            <b> Simple Intrest - {{ result }}</b> <br>
+            <b> Total Amount - {{ toatl }}</b>
+        </span>
+    {% endif %}
+    
+</body>
+</html>
